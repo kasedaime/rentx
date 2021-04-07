@@ -23,7 +23,10 @@ class User {
   driver_license: string;
 
   @Column()
-  iAdmin: boolean;
+  isAdmin: boolean;
+
+  @Column()
+  avatar: string;
 
   @CreateDateColumn()
   created_at: Date;

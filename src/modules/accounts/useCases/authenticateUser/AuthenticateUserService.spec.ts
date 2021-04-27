@@ -1,4 +1,4 @@
-import { AppError } from "../../../../errors/AppError";
+import { AppError } from "@shared/errors/AppError";
 import { ICreateUserDTO } from "../../dtos/ICreateUserDTO";
 import { UsersRepositoryInMemory } from "../../repositories/in-memory/UsersRepositoryInMemory";
 import { CreateUserService } from "../createUser/CreateUserService";
@@ -7,7 +7,7 @@ import { AuthenticateUserService } from "./AuthenticateUserService";
 
 let authenticateUserService: AuthenticateUserService;
 let usersRepositoryInMemory: UsersRepositoryInMemory;
-let createUserService; CreateUserService;
+let createUserService: CreateUserService;
 
 describe("Authenticate user", () => {
 
